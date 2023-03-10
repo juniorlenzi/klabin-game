@@ -55,7 +55,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
                 SizedBox(height: size.height * 0.015),
                 AppText(
-                  'No parque ecologico klabin vivem diversos animais.',
+                  'No Parque Ecológico Klabin vivem diversos animais.',
                   fontSize: 4,
                   color: lightGreen,
                 ),
