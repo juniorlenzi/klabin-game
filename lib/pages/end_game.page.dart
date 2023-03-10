@@ -59,7 +59,8 @@ class _EndGamePageState extends State<EndGamePage> {
                 ),
                 SizedBox(height: size.height * 0.2),
                 AppButton(
-                  label: 'Jogar novamente',
+                  label: 'Recomeçar o jogo',
+                  width: .5,
                   backgroundColor: lightGreen,
                   fontWeight: FontWeight.w900,
                   onPressed: () {
