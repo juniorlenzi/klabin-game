@@ -3,9 +3,10 @@ import 'package:klabin_game/components/text.component.dart';
 import 'package:klabin_game/contants.dart';
 
 class AnimalAnswerOption extends StatelessWidget {
-  const AnimalAnswerOption({super.key, required this.order, required this.name, required this.image, required this.onPressed});
+  const AnimalAnswerOption({super.key, required this.order, required this.name, required this.image, required this.onPressed, required this.id});
 
   final int order;
+  final int id;
   final String name;
   final String image;
 
@@ -21,7 +22,7 @@ class AnimalAnswerOption extends StatelessWidget {
       children: [
         GestureDetector(
           onTap: () {
-            onPressed(order);
+            onPressed(id);
           },
           child: Column(children: [
             Image(

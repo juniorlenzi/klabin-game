@@ -8,9 +8,10 @@ import 'package:klabin_game/pages/end_game.page.dart';
 import 'package:klabin_game/pages/question.page.dart';
 
 class AnswerPage extends StatelessWidget {
-  const AnswerPage({super.key, required this.step, required this.isCorrect});
+  const AnswerPage({super.key, required this.step, required this.isCorrect, required this.animalId});
   final int step;
   final bool isCorrect;
+  final int animalId;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class AnswerPage extends StatelessWidget {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
 
     Size size = MediaQuery.of(context).size;
-    Animal animal = animals[step];
+    Animal animal = animals.firstWhere((element) => element.id == animalId);
 
     return Scaffold(
       body: Stack(

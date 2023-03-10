@@ -4,6 +4,7 @@ import 'package:klabin_game/components/button.dart';
 import 'package:klabin_game/components/text.component.dart';
 import 'package:klabin_game/contants.dart';
 import 'package:klabin_game/pages/question.page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -13,6 +14,17 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
+  @override
+  void initState() {
+    load();
+    super.initState();
+  }
+
+  load() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.clear();
+  }
+
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
@@ -55,12 +67,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
                 SizedBox(height: size.height * 0.015),
                 AppText(
-                  'No Parque Ecológico Klabin vivem diversos animais.',
-                  fontSize: 4,
-                  color: lightGreen,
-                ),
-                AppText(
-                  'Alguns deles emitem sons incofundiveis.',
+                  'No Parque Ecológico Klabin vivem diversos animais Alguns deles emitem sons inconfundíveis.',
                   fontSize: 4,
                   color: lightGreen,
                 ),

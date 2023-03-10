@@ -51,7 +51,7 @@ class _EndGamePageState extends State<EndGamePage> {
                 ),
                 SizedBox(height: size.height * 0.03),
                 const AppText(
-                  'Agora você já conhece alguns dos animais que vivem no Parque Ecológico.',
+                  'Agora você já conhece alguns dos animais que vivem no Parque Ecológico Klabin.',
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
                   fontSize: 5,

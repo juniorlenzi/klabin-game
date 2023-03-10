@@ -7,6 +7,7 @@ final Color lightGreen = HexColor('#329D48');
 final Color darkyGreen = HexColor('#246B36');
 
 class Animal {
+  final int id;
   final String name;
   final String questionImage;
   final String answerImage;
@@ -17,6 +18,7 @@ class Animal {
   final String soundFile;
 
   Animal({
+    required this.id,
     required this.name,
     required this.questionImage,
     required this.answerImage,
@@ -30,6 +32,7 @@ class Animal {
 
 final List<Animal> animals = [
   Animal(
+    id: 0,
     name: 'Bugio Ruivo',
     questionImage: 'assets/images/option-bugiu.png',
     answerImage: 'assets/images/answer_bugio.png',
@@ -39,15 +42,17 @@ final List<Animal> animals = [
     soundFile: 'assets/audios/bugio.mp3',
   ),
   Animal(
+    id: 1,
     name: 'Jacutinga',
     questionImage: 'assets/images/option-jacutinga.png',
     answerImage: 'assets/images/answer_jacutinga.png',
     rightTitle: 'Parabéns, é mesmo a Jacutinga!',
     answerText: 'O nome dela vem do tupi-guarani: "jacu" significa ave e "tinga" significa branco. É uma referência às manchas na cabeça e nas asas.',
-    wrongTitle: 'Na verdade, esse é a Jacutinga!',
+    wrongTitle: 'Na verdade, essa é a Jacutinga!',
     soundFile: 'assets/audios/jacutinga.mp3',
   ),
   Animal(
+    id: 2,
     name: 'Puma',
     questionImage: 'assets/images/option-puma.png',
     answerImage: 'assets/images/answer_puma.png',
@@ -58,16 +63,18 @@ final List<Animal> animals = [
     soundFile: 'assets/audios/puma.mp3',
   ),
   Animal(
+    id: 3,
     name: 'Ema',
     questionImage: 'assets/images/option-ema.png',
     answerImage: 'assets/images/answer_ema.png',
     rightTitle: 'Parabéns, é mesmo a Ema!',
     answerText:
         'Ela é a maior e mais pesada espécie de ave existente no Brasil, chegando a pesar até 24kg. Mas para fugir dos predadores, pode correr a uma velocidade de até 60km/h.',
-    wrongTitle: 'Na verdade, esse é a Ema!',
+    wrongTitle: 'Na verdade, essa é a Ema!',
     soundFile: 'assets/audios/ema.mp3',
   ),
   Animal(
+    id: 4,
     name: 'Queixada',
     questionImage: 'assets/images/option-queixada.png',
     answerImage: 'assets/images/answer_queixada.png',
