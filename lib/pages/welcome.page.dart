@@ -67,7 +67,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
                 SizedBox(height: size.height * 0.015),
                 AppText(
-                  'No Parque Ecológico Klabin vivem diversos animais Alguns deles emitem sons inconfundíveis.',
+                  'No Parque Ecológico Klabin vivem diversos animais. Alguns deles emitem sons inconfundíveis.',
                   fontSize: 4,
                   color: lightGreen,
                 ),
